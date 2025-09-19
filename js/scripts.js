@@ -1,5 +1,5 @@
 // Definitions
-const canvas = document.getElementById('hello-world-canvas');
+const canvas = document.getElementById('myCanvas');
 const context = canvas.getContext('2d');
 
 // set initial canvas size
@@ -32,37 +32,3 @@ window.addEventListener('resize', resizeCanvas);
 
 // inital draw
 draw();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
