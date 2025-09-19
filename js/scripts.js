@@ -26,9 +26,23 @@ function draw() {
 
     // Draw line steps
     context.beginPath(); // reset the context state
-    context.moveTo(50, 300); // moveTo(x,y) => starting point of the line
-    context.lineTo(300, 300); // lineTo(x,y) => end point of the line
+    context.strokeStyle = 'red'; // draws a red line
+    context.lineWidth = 10; // line thickness
+    context.moveTo(30, 150); // moveTo(x,y) => starting point of the line
+    context.lineTo(300, 150); // lineTo(x,y) => end point of the line
     context.stroke(); // draws the line
+
+    //Draw a zig-zag line
+    context.beginPath(); // reset the context state
+    context.strokeStyle = 'red'; // draws a red line
+    context.lineWidth = 10; // line thickness
+    context.moveTo(50, 200); // moveTo(x,y) => starting point of the line
+    context.lineTo(200, 400); // lineTo(x,y) => end point of the line
+    context.lineTo(300, 200); // next point on line
+    context.lineTo(450, 400);
+    context.lineTo(550, 200);
+    context.stroke(); // draws the line
+
 }
 
 // Call resizeCanvas() when the window is resized
