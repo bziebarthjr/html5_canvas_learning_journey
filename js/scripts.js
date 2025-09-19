@@ -43,6 +43,42 @@ function draw() {
     context.lineTo(550, 200);
     context.stroke(); // draws the line
 
+    /*
+
+    Line Caps -> context.lineCap = "";
+    - butt -> default
+    - round
+    - square
+    default is butt
+    
+    */
+
+    // draw three parallel lines
+    context.beginPath(); // reset context
+    context.lineCap = "butt";
+    context.strokeStyle = 'purple';
+    context.lineWidth = 10;
+    context.moveTo(20, 500);
+    context.lineTo(500, 500);
+    context.stroke();
+
+    context.beginPath(); // reset context
+    context.strokeStyle = 'blue';
+    context.lineCap = "round"; // semi-circle is added to the end of the line. radius is half the width of the line
+    context.lineWidth = 10;
+    context.moveTo(20, 525);
+    context.lineTo(500, 525);
+    context.stroke();
+
+    context.beginPath(); // reset context
+    context.strokeStyle = 'black';
+    context.lineCap = "square"; // rectangle with length equal to half the length of the width of the line is added to the end
+    context.lineWidth = 10;
+    context.moveTo(20, 550);
+    context.lineTo(500, 550);
+    context.stroke()
+
+
 }
 
 // Call resizeCanvas() when the window is resized
