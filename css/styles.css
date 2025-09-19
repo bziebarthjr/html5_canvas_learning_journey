@@ -1,0 +1,10 @@
+/* resets for body */
+* {
+    box-sizing: border-box;
+}
+
+#hello-world-canvas {
+    border: 1px solid black;
+    /* center align */
+    display: block;
+}
