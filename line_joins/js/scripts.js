@@ -58,8 +58,7 @@ function draw() {
     context.lineTo(140, 290);
     context.lineTo(140, 590);
     context.strokeStyle = 'orange';
-    context.stroke();
-
+    context.stroke(); 
 
 }
 
