@@ -30,55 +30,55 @@ function draw() {
     // Set the shadow attributes
     context.strokeStyle = 'red';
     context.lineWidth = 20;
-    context.shadowColor = 'black';
+    context.shadowColor = 'blue';
     context.shadowOffsetX = 10;
     context.shadowOffsetY = 10;
-    context.shadowBlur = 5;
+    context.shadowBlur = 10;
     // Draw the line
     context.moveTo(100, 100);
-    context.lineTo(900,100);
+    context.lineTo(400,100);
     context.stroke();
 
     // draw line 2
     context.beginPath();
     // Set the shadow attributes
-    context.strokeStyle = 'orange';
+    context.strokeStyle = 'red';
     context.lineWidth = 20;
-    context.shadowColor = 'black';
-    context.shadowOffsetX = 10;
+    context.shadowColor = 'green';
+    context.shadowOffsetX = -10;
     context.shadowOffsetY = 10;
-    context.shadowBlur = 5;
+    context.shadowBlur = 10;
     // Draw the line
-    context.moveTo(100, 170);
-    context.lineTo(900,170);
+    context.moveTo(600, 100);
+    context.lineTo(900,100);
     context.stroke();
 
     // draw line 3
     context.beginPath();
     // Set the shadow attributes
-    context.strokeStyle = 'blue';
+    context.strokeStyle = 'red';
     context.lineWidth = 20;
-    context.shadowColor = 'black';
+    context.shadowColor = 'yellow';
     context.shadowOffsetX = 10;
-    context.shadowOffsetY = 10;
-    context.shadowBlur = 5;
+    context.shadowOffsetY = -10;
+    context.shadowBlur = 10;
     // Draw the line
-    context.moveTo(100, 230);
-    context.lineTo(900,230);
+    context.moveTo(100, 300);
+    context.lineTo(400,300);
     context.stroke();
 
-    // draw line 3
+    // draw line 4
     context.beginPath();
     // Set the shadow attributes
-    context.strokeStyle = 'yellow';
+    context.strokeStyle = 'red';
     context.lineWidth = 20;
-    context.shadowColor = 'black';
-    context.shadowOffsetX = 10;
-    context.shadowOffsetY = 10;
-    context.shadowBlur = 5;
+    context.shadowColor = 'brown';
+    context.shadowOffsetX = -10;
+    context.shadowOffsetY = -10;
+    context.shadowBlur = 10;
     // Draw the line
-    context.moveTo(100, 290);
-    context.lineTo(900,290);
+    context.moveTo(600, 300);
+    context.lineTo(900, 300);
     context.stroke();
 
 }
