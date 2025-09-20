@@ -28,7 +28,13 @@ function draw() {
 
     // First Z Object
     context.beginPath();
-    context.strokeStyle = 'red';
+    context.strokeStyle = '#000099';
+    context.lineCap = 'butt';
+    context.lineJoin = 'bevel';
+    context.shadowColor = 'black';
+    context.shadowBlur = 10;
+    context.shadowOffsetX = 10;
+    context.shadowOffsetY = 10;
     context.lineWidth = 15;
     context.moveTo(60, 80);
     context.lineTo(360, 80);
@@ -38,7 +44,13 @@ function draw() {
 
     // Second Z Object
     context.beginPath();
-    context.strokeStyle = 'blue';
+    context.strokeStyle = '#800000';
+    context.lineCap = 'round';
+    context.lineJoin = 'round';
+    context.shadowColor = 'black';
+    context.shadowBlur = 10;
+    context.shadowOffsetX = 10;
+    context.shadowOffsetY = 10;
     context.lineWidth = 15;
     context.moveTo(860, 80);
     context.lineTo(560, 80);
@@ -48,12 +60,34 @@ function draw() {
 
     // Third Z Object
     context.beginPath();
-    context.strokeStyle = 'red';
+    context.strokeStyle = '#336600';
+    context.lineCap = 'square';
+    context.lineJoin = 'miter';
+    context.shadowColor = 'black';
+    context.shadowBlur = 10;
+    context.shadowOffsetX = 10;
+    context.shadowOffsetY = 10;
     context.lineWidth = 15;
     context.moveTo(60, 380);
     context.lineTo(360, 380);
     context.lineTo(80, 580);
     context.lineTo(380, 580);
+    context.stroke();
+
+    // Fourth Z Object
+    context.beginPath();
+    context.strokeStyle = '#cc3300';
+    context.lineCap = 'butt';
+    context.lineJoin = 'bevel';
+    context.shadowColor = 'black';
+    context.shadowBlur = 10;
+    context.shadowOffsetX = 10;
+    context.shadowOffsetY = 10;
+    context.lineWidth = 15;
+    context.moveTo(860, 380);
+    context.lineTo(560, 380);
+    context.lineTo(860, 580);
+    context.lineTo(540, 580);
     context.stroke();
 
 
