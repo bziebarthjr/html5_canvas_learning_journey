@@ -1,0 +1,11 @@
+/* resets for body */
+* {
+    box-sizing: border-box;
+}
+
+#myCanvas {
+    border: 1px solid black;
+   /* center align */
+    display: block;
+    margin: auto;
+}
