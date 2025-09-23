@@ -22,9 +22,14 @@ function draw() {
     // context.arc(centerX, centerY, radius, startAngle, endAngle, antiClockwiseDirection);
     context.beginPath();
     context.strokeStyle = 'red';
+    context.fillStyle = 'red';
     context.lineWidth = 15;
-    context.arc(500, 500, 150, 360 * radian, false);
+    context.arc(800, 1000, 150, 135 * radian, 360 * radian, false);
     context.stroke();
+    context.fill();
+
+    // draw pac-man
+
 
 }
 
